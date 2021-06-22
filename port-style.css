@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Oswald:wght@300;400;600;700&display=swap");
+}
+
+a:visited {
+    color: black;
+}
+a:active{
+    color: white;
+}
+a:hover {
+    background-color: #637167;
+}
+
+body {
+    background-image: url("https://github.com/Warywise/g_santanna-Y/blob/3.3/bloco3/images/code-black-background-1366x768.jpg?raw=true");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    }
+
+#header {
+    position: fixed;
+    background-color: #3C4B40;
+    right: 0;
+    left: 0;
+    top: 0;
+    box-shadow: 0 1px 1px black;
+    border-bottom: black thin solid;
+    
+}
+
+.header-content {
+    border-style: groove;
+    border-color: #637167;
+    box-shadow: 0 0 2px black, -1px -1px 2px #637167;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    text-shadow: -0.5px 0 #FFF6E0, 1px 1px #637167;
+    font-weight: 550;
+    padding: 3px;
+    float: left;
+    margin: 3px;
+    
+}
+
+#email {
+    font-family: 'Open Sans', sans-serif;
+    /* text-shadow: -0.3px -0.3px #FFF6E0, 0.3px 0.3px #FFF6E0; */
+    font-size: 1.3rem;
+    float: right;
+    padding: 5px;
+    margin-right: 1%;
+    font-weight: 600;
+}
+
+.main {
+    background-color: 	#E6E6FA;
+    /* padding-left: 10px; */
+    color: #26201F;
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 1.3em;
+    max-width: 75%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border: 5px groove #4C5536;
+}
+
+#main-header{
+    background-position: 100% 77%;
+    background-repeat: inherit;
+    background-size: 75%;
+    background-image: url(https://github.com/Warywise/g_santanna-Y/blob/3.3/bloco3/images/digital-5.png?raw=true), linear-gradient(#54463E, #FFF6E0);
+    border: groove #4C5536;
+    padding-left: 10px;
+
+}
+
+img.foto:hover {
+    zoom: 171%;
+    right: 10%;
+    position: absolute;
+}
+
+h1 {
+    padding-top: 35px;
+    color: #26201F;
+    text-shadow: -1px 1px #557860, 1px 1px black;
+    /* border-bottom: 3px groove #A49B83; */
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 200%;
+}
+
+h2 {
+    padding: 10px;
+    padding-top: 25px;
+    padding-left: 20px;
+    color: #4C5536;
+    text-shadow: 1.5px 1px #557860, -1.1px 1px black;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 150%;
+}
+
+.text-content {
+    padding-left: 5px;
+}
+#index-2{
+    margin-top: 15px;
+}
+
+#footer {
+    width: 100%;
+    background-color: #637167;
+    height: 100px;
+    border-top: groove #46584B;
+}
+
+.footer-content div {
+    margin: 0 5% 0 5%;
+    padding: 10px;
+    display: inline-block;
+}
+
+.footer-hover:hover {
+    text-decoration: underline;
+    font-size: 1.3em;
+    position: absolute;
+} .footer-hover:hover::before {
+    content: "→"; color: black; font-size: x-large;
+}
+
+.tag-list::before {
+    content: "✔"; color: green; display: inline-block;  font-size: x-large;
+}
+
+.soft-div {
+    max-width: 75%;
+    
+}
+.tag-list {
+    margin-left: 3%;
+    padding: 15px;
+    margin-right: 3%;
+    display: inline-block;
+    
+}
+
+img.foto {
+    float: right;
+    display: block;
+    margin-right: 5%;
+    width: 200px;
+    border-radius: 5%;
+    border: thin solid;
+}
+
+.terminal {
+    text-align: center;
+    margin-right: 50px;
+    padding: 10px;
+    margin-bottom: 3em;
+}
+.terminal img {
+    float: left;
+    margin: 10px;
+    border-radius: 8%;
+    border: double black;
+}
+
+.git {
+    text-align: center;
+    margin-left: 50px;
+    padding: 10px;
+    margin-bottom: 3em;
+}
+.git img {
+    float: right;
+    margin: 10px;
+    border-radius: 8%;
+    border: double black;
+}
+
+.html-css {
+    text-align: center;
+    margin-right: 50px;
+    padding: 10px;
+    margin-bottom: 8em;
+}
+.html-css img {
+    float: left;
+    margin: 10px;
+    border-radius: 8%;
+    border: double black;
+}
+
+
+
+
