@@ -7,6 +7,7 @@
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 @font-face {
@@ -74,7 +75,7 @@ body {
     color: #26201F;
     font-family: 'Open Sans' , sans-serif;
     font-size: 1.3em;
-    max-width: 75%;
+    max-width: 80%;
     margin: auto;
     margin-top: 5%;
     margin-bottom: 3%;
@@ -82,9 +83,8 @@ body {
 }
 
 #main-header{
-    background-position: 100% 77%;
-    background-repeat: inherit;
-    background-size: 75%;
+    background-position: right;
+    background-size:49%;
     background-image: url(https://github.com/Warywise/g_santanna-Y/blob/3.3/bloco3/images/digital-5.png?raw=true), linear-gradient(#54463E, #FFF6E0);
     border: groove #4C5536;
     padding-left: 10px;
@@ -118,30 +118,36 @@ h2 {
     font-size: 150%;
 }
 
+h3 {
+    padding: 10px 0 5px 10px;
+}
+
 .text-content {
-    padding-left: 5px;
+    padding-left: 10px;
+    max-width: 75%;
 }
 #index-2{
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 #footer {
     width: 100%;
     background-color: #637167;
-    height: 100px;
+    height: 150px;
     border-top: groove #46584B;
 }
 
 .footer-content div {
-    margin: 0 5% 0 5%;
-    padding: 10px;
+    padding: 5px 0 5px 10px;
     display: inline-block;
+    width: 30%;
 }
 
 .footer-hover:hover {
     text-decoration: underline;
     font-size: 1.3em;
     position: absolute;
+
 } .footer-hover:hover::before {
     content: "→"; color: black; font-size: x-large;
 }
@@ -175,7 +181,7 @@ img.foto {
     text-align: center;
     margin-right: 50px;
     padding: 10px;
-    margin-bottom: 3em;
+    margin-bottom: 2.5em;
 }
 .terminal img {
     float: left;
@@ -188,7 +194,7 @@ img.foto {
     text-align: center;
     margin-left: 50px;
     padding: 10px;
-    margin-bottom: 3em;
+    margin-bottom: 2.5em;
 }
 .git img {
     float: right;
@@ -201,13 +207,34 @@ img.foto {
     text-align: center;
     margin-right: 50px;
     padding: 10px;
-    margin-bottom: 8em;
+    margin-bottom: 6em;
 }
 .html-css img {
     float: left;
     margin: 10px;
     border-radius: 8%;
     border: double black;
+}
+article.text-content div{
+    display: inline;
+}
+#history {
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 5%;
+}
+
+#adesivos {
+    display: inline-block;
+    float: left;
+}
+
+.adesivos-right {
+    padding: 70px 60px 70px 0;
+    margin: 20px 0 30px -30px;
+}
+.adesivos-left {
+    padding: 70px 0 70px 60px;
 }
 
 
