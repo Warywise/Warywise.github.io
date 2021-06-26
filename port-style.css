@@ -5,7 +5,8 @@
     scroll-behavior: smooth;
 }
 
-a {
+a, li {
+    list-style-type: circle;
     text-decoration: none;
     color: black;
 }
@@ -41,6 +42,7 @@ body {
     top: 0;
     box-shadow: 0 1px 1px black;
     border-bottom: black thin solid;
+    z-index: 1;
     
 }
 
@@ -52,7 +54,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
     text-shadow: -0.5px 0 #FFF6E0, 1px 1px #637167;
-    font-weight: 550;
+    font-weight: 500;
     padding: 3px;
     float: left;
     margin: 3px;
@@ -61,7 +63,6 @@ body {
 
 #email {
     font-family: 'Open Sans', sans-serif;
-    /* text-shadow: -0.3px -0.3px #FFF6E0, 0.3px 0.3px #FFF6E0; */
     font-size: 1.3rem;
     float: right;
     padding: 5px;
@@ -92,16 +93,13 @@ body {
 }
 
 img.foto:hover {
-    zoom: 171%;
-    right: 10%;
-    position: absolute;
+    transform: translate(-30%, 30%) scale(1.6, 1.6);
 }
 
 h1 {
     padding-top: 35px;
     color: #26201F;
     text-shadow: -1px 1px #557860, 1px 1px black;
-    /* border-bottom: 3px groove #A49B83; */
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     font-size: 200%;
@@ -120,17 +118,19 @@ h2 {
 
 h3 {
     padding: 10px 0 5px 10px;
+    text-align: center;
 }
 
 .text-content {
     padding-left: 10px;
-    max-width: 75%;
+    max-width: 80%;
 }
 #index-2{
     margin-top: 20px;
 }
 
 #footer {
+    position: relative;
     width: 100%;
     background-color: #637167;
     /* height: 50%; */
@@ -138,21 +138,24 @@ h3 {
 }
 
 .footer-content div {
-    padding: 5px 0 5px 10px;
+    padding: 5px 0 20px 10px;
     display: inline-block;
     width: 27%;
     font-size: 1.1rem;
+    text-align: center;
     margin-left: 2%;
+    position: relative;
 } #footer-sig {
     position: absolute;
     right: 2%;
-    flo
+    max-width: 35%;
 }
 
 .footer-hover:hover {
     text-decoration: underline;
     font-size: 1.3em;
     position: absolute;
+    left: 10%;
 
 } .footer-hover:hover::before {
     content: "→"; color: black; font-size: x-large;
@@ -222,27 +225,59 @@ img.foto {
     border: double black;
 }
 article.text-content div{
-    display: inline;
+    text-align: center;
 }
 #history {
+    position: relative;
     display: inline-block;
     padding: 15px;
     margin-bottom: 5%;
+    /* border: solid black; */
+} 
+
+.history-content {
+    position: relative;
+    margin-left: 20%;
+    width: 80%;
 }
 
 #adesivos {
+    position: relative;
     display: inline-block;
     float: left;
+    width: 10%;
+    padding: 50% 10%;
+    /* border: solid black; */
 }
 
-.adesivos-right {
-    padding: 70px 60px 70px 0;
-    margin: 20px 0 30px -30px;
+.adesivo_1 {
+    display: block;
+    position: absolute;
+    width: 70px;
+    transform: rotate(-10deg) scale(1.2, 1.2) translate(35%, -10%);
+    top: 10%;
 }
-.adesivos-left {
-    padding: 70px 0 70px 60px;
+
+.adesivo_2 {
+    display: block;
+    position: absolute;
+    width: 70px;
+    transform: rotate(10deg) scale(1.2, 1.2) translate(-35%, 10%);
+    top: 30%;
 }
 
+.adesivo_3 {
+    display: block;
+    position: absolute;
+    width: 70px;
+    transform: rotate(-5deg) scale(1.2, 1.2) translate(30%, -10%);
+    top: 60%;
+}
 
-
-
+.adesivo_4 {
+    display: block;
+    position: absolute;
+    width: 70px;
+    transform: rotate(10deg) scale(1.3, 1.3) translate(-35%, -10%);
+    top: 90%;
+}
