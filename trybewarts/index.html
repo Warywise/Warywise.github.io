@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js" async></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Trybewarts</title>
+</head>
+<body>
+  <header class="header">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <form class="trybewarts-login">
+      <div>
+        <input class="login" id="login-email" placeholder="Login" type="email">
+        <input class="login" id="login-senha" placeholder="Senha" type="password">
+      </div>
+      <button class="cursor" id="login">Logar</button>
+    </form>
+  </header>
+  <main>
+    <form id="evaluation-form">
+      <div id="formTitle">
+        <h2>Formulário de Inscrição Trybruxo!</h2>
+      </div>
+      <section class="section" id="section-A">
+        <div>
+          <input class="inputsForm" type="text" id="input-name" placeholder="Nome">
+          <input class="inputsForm" type="text" id="input-lastname" placeholder="Sobrenome">
+        </div>
+        <div>
+          <input class="inputsForm" type="email" id="input-email" placeholder="Email">
+          <div class="inputsForm" id="houseSelect">
+            <label for="house">Casa:</label>
+            <select id="house">
+              <option value="-Não declarado-"><h3>Escolha uma casa</h3></option>
+              <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+              <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+              <option id="corvinode-house" value="Corvinode">Corvinode</option>
+              <option id="pytherina-house" value="Pytherina">Pytherina</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="section" id="section-B">
+        <div>
+          <label id="label-family"><h3>Qual sua família?</h3></label>
+          <label class="cursor familyLabel"><input class="family cursor" type="radio" name="family" value="Frontend">Frontend</label>
+          <label class="cursor familyLabel"><input class="family cursor" type="radio" name="family" value="Backend">Backend</label>
+          <label class="cursor familyLabel"><input class="family cursor" type="radio" name="family" value="FullStack">FullStack</label>
+        </div>
+        <div>
+          <label id="label-content"><h3>Qual conteúdo você está com mais vontade de aprender?</h3></label>
+          <div>
+            <label class="cursor subjectLabel"><input class="subject cursor" type="checkbox" value="HoFs"> HoFs</label>
+            <label class="cursor subjectLabel"><input class="subject cursor" type="checkbox" value="Jest">Jest</label>
+            <label class="cursor subjectLabel"><input class="subject cursor" type="checkbox" value="Promises">Promises</label>
+            <label class="cursor subjectLabel"><input class="subject cursor" type="checkbox" value="React">React</label>
+            <label class="cursor subjectLabel"><input class="subject cursor" type="checkbox" value="SQL">SQL</label>
+            <label class="cursor subjectLabel"><input class="subject cursor" type="checkbox" value="Python">Python</label>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="section" id="section-C">
+        <label id="label-rate"><h3>Como você avalia a Trybewarts?</h3></label>
+        <div>
+          <label class="cursor"><input class="rate cursor" type="radio" name="rate" value="1">1</label>
+          <label class="cursor"><input class="rate cursor" type="radio" name="rate" value="2">2</label>
+          <label class="cursor"><input class="rate cursor" type="radio" name="rate" value="3">3</label>
+          <label class="cursor"><input class="rate cursor" type="radio" name="rate" value="4">4</label>
+          <label class="cursor"><input class="rate cursor" type="radio" name="rate" value="5">5</label>
+          <label class="cursor"><input class="rate cursor" type="radio" name="rate" value="6">6</label>
+          <label class="cursor"><input class="rate cursor" type="radio" name="rate" value="7">7</label>
+          <label class="cursor"><input class="rate cursor" type="radio" name="rate" value="8">8</label>
+          <label class="cursor"><input class="rate cursor" type="radio" name="rate" value="9">9</label>
+          <label class="cursor"><input class="rate cursor" type="radio" name="rate" value="10">10</label>
+        </div>
+      </section>
+      <section class="section" id="section-D">
+        <label class="textarea"><h3>Deixe seu comentário:</h3></label> <br>
+        <textarea id="textarea" cols="60" rows="8" maxlength="500"></textarea> <br>
+        <h3><span id="counter">500</span></h3>
+      </section>
+      <label class="cursor" id="label-infos">Você concorda com o uso das informações acima?
+        <input class="cursor" type="checkbox" id="agreement">
+      </label>
+      <button class="cursor" type="submit" id="submit-btn" disabled>Enviar</button>
+      <div id="alert" class="alertOff"><b>✖</b> Campos <b>Nome</b> e <b>Email</b> são obrigatórios!</div>
+    </form>
+    <div id="trybewarts-img">
+      <img src="images/trybewarts-colored.svg" alt="Logomarca do projeto Trybewarts" id="trybewarts-forms-logo">
+    </div>
+  </main>
+  <footer>Direitos reservados à Trybewarts©</footer>
+</body>
+</html>
