@@ -14,6 +14,10 @@ const check = document.getElementById('agreement');
 const submit = document.getElementById('submit-btn');
 const alertMsg = document.getElementById('alert');
 const trybewartsImg = document.getElementById('trybewarts-img');
+const gitnoriaImg = () => imgLoad('images/gitnoria.png');
+const reactpuffImg = () => imgLoad('images/reactpuff.png');
+const corvinodeImg = () => imgLoad('images/corvinode.png');
+const pytherinaImg = () => imgLoad('images/pytherina.png');
 // Requisito 3: verifica se foi dado o Email e Senha esperados
 function loginAcess() {
   if (loginEmail.value === 'tryber@teste.com' && loginSenha.value === '123456') {
@@ -93,11 +97,17 @@ const onClickSubmit = () => {
   return filledForm ? displayAlert() : rebuildForm();
 };
 
+function imgLoad(url) {
+  const image = new Image();
+  image.src = url;
+  return image;
+}
+
 function imgChange() {
   const selectedHouse = house.value;
   switch (selectedHouse) {
   case 'Gitnória':
-    trybewartsImg.style.backgroundImage = 'url("images/gitnoria.png")';
+    trybewartsImg.style.backgroundImage = `url("images/gitnoria.png")`;
     break;
   case 'Reactpuff':
     trybewartsImg.style.backgroundImage = 'url("images/reactpuff.png")';
@@ -130,4 +140,10 @@ function Events() {
 
 window.onload = () => {
   Events();
+
+  gitnoriaImg();
+  reactpuffImg();
+  corvinodeImg();
+  pytherinaImg();
+
 };
