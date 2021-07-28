@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixels Art</title>
+  <link type="text/css" href="style.css" rel="stylesheet">
+  <script type="text/javascript" src="script.js" async></script>
+</head>
+<body>
+  <main class="random-color">
+    <h1 id="title">Color <b id="mix">Mix</b> Twister!</h1>
+    <div class="random-color" id="palette">
+      <div id="color-palette">
+        <div id="color-a" style="background-color: black" class="color selected"></div>
+        <div id="color-b" style="background-color: white" class="color"></div>
+        <div id="color-c" style="background-color: red" class="color random-palette"></div>
+        <div id="color-d" style="background-color: green" class="color random-palette"></div>
+        <div id="color-e" style="background-color: blue" class="color random-palette"></div>
+      </div>
+      <button id="palette-button">Roleta<br>de<br>Cores</button>
+    </div>
+    <div id="reset-stop-buttons">
+      <button id="pause-play">Ⅱ  ▶</button>
+      <button id="reset">Reset Color</button>
+    </div>
+    <div id="inputDiv" class="random-color">
+      <button id="pix-size"><b id="up-size">⇱</b> <b>□</b> <b id="down-size">⇲</b></button>
+      <!-- Após encontrar no Stackoverflow o atributo: oninput="validity.valid||(value='');" eu pesquisei seu funcionamento e decidi ser uma boa escolha -->
+      <input oninput="validity.valid||(value='');" id="board-size" type="number" min="1" value="10"> ◄-|-►
+      <div>
+        <button id="generate-board-large" class="generate-board">VQV</button>
+        <legend id="conditionNumber-large" class="conditionTrue">Use números de 5 a 30.</legend>
+        <button id="generate-board-medium" class="generate-board">VQV</button>
+        <legend id="conditionNumber-medium" class="conditionTrue">Use números de 5 a 20.</legend>
+      </div>
+    </div>
+    <div id="clear" class="random-color">
+      <button id="clear-board">Limpar</button>
+      <button id="twist-button">Color<br>Twister!</button>
+    </div>
+    <div id="pixel-board">
+    </div>
+  </main>
+</body>
+</html>

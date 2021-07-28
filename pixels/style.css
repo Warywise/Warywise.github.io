@@ -1,0 +1,245 @@
+button:active {
+  opacity: 0.8;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(white, grey);
+  transition: all 5s;
+}
+
+main {
+  background-image: radial-gradient(white, rgb(150, 150, 150));
+  background: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  flex-basis: 85vw;
+  border: dotted purple;
+  padding: 10px;
+  position: relative;
+}
+
+legend {
+  align-self: flex-start;
+}
+
+#title {
+  font-family: monospace;
+}
+
+#mix {
+  font-size: 2rem;
+}
+
+.color {
+  display: inline-block;
+  border: thick groove lightgray;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+#palette {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+  border: thick groove lightgray;
+  background-image: radial-gradient(white, rgb(150, 150, 150));
+}
+
+#color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#palette-button {
+  color: white;
+  font-size: large;
+  text-shadow: 2px 2px 3px black;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 50%;
+  background-image: url('images/colors.png');
+  background-size: cover;
+  background-clip: border-box;
+}
+
+#reset-stop-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  position: absolute;
+  right: 1%;
+  top: 2%;
+}
+
+#inputDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: thick groove lightgray;
+  background-image: radial-gradient(white, rgb(150, 150, 150));
+}
+
+#inputDiv > div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#pix-size {
+  font-size: 2.3rem;
+}
+
+#up-size {
+  font-size: 2.8rem;
+  font-weight: 100;
+}
+
+#down-size {
+  font-size: 1.1rem;
+}
+
+.generate-board {
+  justify-self: baseline;
+  box-sizing: border-box;
+  background-color: springgreen;
+  border-radius: 15%;
+  padding: 10px 25px;
+  margin: 15px 5px 5px 5px;
+  font-size: larger;
+  font-weight: 600;
+}
+
+#generate-board-medium {
+  display: none;
+}
+
+#conditionNumber-medium {
+  display: none;
+}
+
+#board-size {
+  padding: 10px 5px;
+  margin: 15px 5px;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.conditionTrue {
+  font-size: large;
+  text-decoration: underline;
+}
+
+.conditionFalse {
+  font-size: large;
+  font-weight: 500;
+  color: red;
+  text-decoration: underline double;
+}
+
+#clear {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 0 15px;
+  width: 40%;
+  border: thick groove lightgray;
+  background-image: radial-gradient(white, rgb(150, 150, 150));
+}
+
+#clear-board {
+  padding: 1.1rem 1rem;
+  color: black;
+  font-size: medium;
+  text-shadow: 0 0 10px black;
+  font-weight: 600;
+  border-radius: 50%;
+  /* margin: 15px; */
+  font-size: large;
+  font-weight: 600;
+}
+
+#twist-button {
+  padding: 0.8rem;
+  color: white;
+  font-size: medium;
+  text-shadow: 2px 2px 2px black;
+  font-weight: 600;
+  border-radius: 50%;
+  background-image: url('images/quadro-cores.png');
+  background-size: cover;
+  background-clip: border-box;
+
+}
+
+.pixel {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: solid 1px black;
+  background-color:  white;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.tableRow {
+  line-height: 0;
+}
+
+.random-color {
+  transition: border-color 2s;
+}
+
+@media screen and (max-width: 960px) {
+  #generate-board-medium {
+    display: inherit;
+  }
+  
+  #conditionNumber-medium {
+    display: inherit;
+  }
+
+  #generate-board-large {
+    display: none;
+  }
+  
+  #conditionNumber-large {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #inputDiv {
+    display: none;
+  }
+
+  #palette {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .color {
+    width: 80px;
+    height: 80px;
+  }
+
+  #clear {
+    width: 80%;
+  }
+
+  #reset-stop-buttons {
+    flex-direction: row;
+    top: -3px;
+  }
+}
