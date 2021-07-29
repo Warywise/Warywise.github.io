@@ -59,7 +59,7 @@ function checkedValue(element) {
       arrayOfValues.push(` ${curEl.value}`);
     }
     return false;
-  });
+  }, 0);
   if (arrayOfValues.length === 0) return ' -Não definido-';
   return arrayOfValues;
 }
@@ -96,13 +96,13 @@ const onClickSubmit = () => {
   const filledForm = (inputName.value && inputEmail.value) === '';
   return filledForm ? displayAlert() : rebuildForm();
 };
-
+// Function para preload de imagens.
 function imgLoad(url) {
   const image = new Image();
   image.src = url;
   return image;
 }
-
+// Muda a imagem de Trybewarts de acordo com a 'casa' escolhida.
 function imgChange() {
   const selectedHouse = house.value;
   switch (selectedHouse) {
