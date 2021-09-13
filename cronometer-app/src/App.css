@@ -1,0 +1,160 @@
+body {
+  background-image: url('./images/nyan_cat_background.jpg');
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
+button {
+  background-color: rgb(116, 201, 212);
+  font-size: medium;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  text-shadow: 0.5px 0.5px 1px black;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  align-items: center;
+  background-color: #2e3c58da;
+  color: white;
+  display: flex;
+  font-size: calc(15px + 2vmin);
+  font-weight: 900;
+  justify-content: center;
+  letter-spacing: 0.5rem;
+  text-shadow: 0.5px 0.5px 2px black;
+}
+
+.cronometer-box {
+  font-size: x-large;
+  margin-top: 15vh;
+}
+
+.cronometer {
+  display: flex;
+  font-size: xx-large;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-unit {
+  background-color: whitesmoke;
+  border: solid thin darkgrey;
+  border-radius: 5%;
+  box-shadow: 0.5px 0.7px 3px black;
+  color: red;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: xxx-large;
+  margin: 5px;
+  padding: 3px 8px 3px 5px;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 1px black;
+  width: 50px;
+}
+
+.nyan-cat {
+  animation: nyan 2s infinite linear;
+  background-image: url('./images/nyan-cat.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 1px;
+  height: 80px;
+  margin-left: -95vw;
+  position: absolute;
+  transition: linear;
+  width: 100vw;
+}
+
+.time-end {
+  align-items: center;
+  background-image: url('https://thumbs.gfycat.com/AgreeableAnguishedAphid-max-1mb.gif');
+  background-size: cover;
+  border-radius: 5%;
+  color: hotpink;
+  display: flex;
+  font-weight: 500;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-around;
+  margin-left: 40%;
+  padding: 10px;
+  position: absolute;
+  text-shadow: 0.5px 0.5px 2px white;
+  top: 30%;
+  width: 20%;
+  z-index: 5;
+}
+
+.time-end-btn {
+  box-shadow: 0.3px 0.3px 3px black;
+  box-shadow: 0.3px 0.3px 3px darkgrey;
+  border-radius: 5%;
+  font-size: medium;
+  font-weight: 600;
+  opacity: 0.80;
+}
+
+.time-end:hover .time-end-btn {
+  opacity: 0.95;
+}
+
+.start-btn {
+  background-color: rgb(177, 212, 116);
+  box-shadow: 0.5px 0.5px 3px black;
+  border-radius: 10%;
+  font-size: large;
+  font-weight: 600;
+  opacity: 0.9;
+  padding: 5px 10px;
+}
+
+.pause-btn {
+  background-color: rgb(218, 124, 101);
+  box-shadow: 0.5px 0.5px 3px black;
+  border-radius: 10%;
+  font-size: medium;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.reset-btn {
+  background-color: rgb(218, 210, 101);
+  box-shadow: 0.5px 0.5px 3px black;
+  border-radius: 10%;
+  font-size: medium;
+  font-weight: 600;
+  margin-left: 5vw;
+  opacity: 0.9;
+}
+
+.defaul-btn:hover {
+  opacity: 1;
+  box-shadow: 0.3px 0.3px 2px black;
+  box-shadow: 0.3px 0.3px 2px white;
+}
+
+.text-content {
+  font-weight: 900;
+  text-shadow: 0.5px 0.3px 2px rgb(178, 243, 213);
+}
+
+.text-content:hover {
+  color: rgb(15, 15, 15);
+  cursor: pointer;
+  text-shadow: 0.5px 0.3px 3px white;
+}
+
+#view-hour {
+  opacity: 0;
+}
+
+@keyframes nyan {
+  0% { transform: translateY(-15px) };
+  50% { transform: translateY(-5px) };
+  75% { transform: translateY(0) };
+  100% { transform: translateY(-10px) };
+}
