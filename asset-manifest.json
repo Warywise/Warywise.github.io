@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/cronometer-app/static/css/main.fa391d56.chunk.css",
-    "main.js": "/cronometer-app/static/js/main.04c19740.chunk.js",
-    "main.js.map": "/cronometer-app/static/js/main.04c19740.chunk.js.map",
-    "runtime-main.js": "/cronometer-app/static/js/runtime-main.19a223e5.js",
-    "runtime-main.js.map": "/cronometer-app/static/js/runtime-main.19a223e5.js.map",
-    "static/js/2.d1a65b75.chunk.js": "/cronometer-app/static/js/2.d1a65b75.chunk.js",
-    "static/js/2.d1a65b75.chunk.js.map": "/cronometer-app/static/js/2.d1a65b75.chunk.js.map",
-    "static/js/3.bbf31fc4.chunk.js": "/cronometer-app/static/js/3.bbf31fc4.chunk.js",
-    "static/js/3.bbf31fc4.chunk.js.map": "/cronometer-app/static/js/3.bbf31fc4.chunk.js.map",
-    "index.html": "/cronometer-app/index.html",
-    "static/css/main.fa391d56.chunk.css.map": "/cronometer-app/static/css/main.fa391d56.chunk.css.map",
-    "static/js/2.d1a65b75.chunk.js.LICENSE.txt": "/cronometer-app/static/js/2.d1a65b75.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/cronometer-app/static/media/nyan_cat_background.db9923c4.jpg"
+    "main.css": "./static/css/main.1adf3b34.chunk.css",
+    "main.js": "./static/js/main.04c19740.chunk.js",
+    "main.js.map": "./static/js/main.04c19740.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.88fbdcd7.js",
+    "runtime-main.js.map": "./static/js/runtime-main.88fbdcd7.js.map",
+    "static/js/2.d1a65b75.chunk.js": "./static/js/2.d1a65b75.chunk.js",
+    "static/js/2.d1a65b75.chunk.js.map": "./static/js/2.d1a65b75.chunk.js.map",
+    "static/js/3.bbf31fc4.chunk.js": "./static/js/3.bbf31fc4.chunk.js",
+    "static/js/3.bbf31fc4.chunk.js.map": "./static/js/3.bbf31fc4.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.1adf3b34.chunk.css.map": "./static/css/main.1adf3b34.chunk.css.map",
+    "static/js/2.d1a65b75.chunk.js.LICENSE.txt": "./static/js/2.d1a65b75.chunk.js.LICENSE.txt",
+    "static/media/App.css": "./static/media/nyan_cat_background.db9923c4.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.19a223e5.js",
+    "static/js/runtime-main.88fbdcd7.js",
     "static/js/2.d1a65b75.chunk.js",
-    "static/css/main.fa391d56.chunk.css",
+    "static/css/main.1adf3b34.chunk.css",
     "static/js/main.04c19740.chunk.js"
   ]
 }
